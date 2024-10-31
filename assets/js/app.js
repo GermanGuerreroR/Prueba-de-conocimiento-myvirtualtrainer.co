@@ -20,7 +20,7 @@ const climateSearch = (event) => {
 
 
 const formValidation = () => {
-    alert("Please fill both fields");
+    alert("Por favor digite la información completa para la búsqueda");
 }
 
 
@@ -45,7 +45,7 @@ const checkAPI = (city, country) => {
     const apiID = '3fb72f14436e451b397453b2b6171d87';
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiID}`;
     fetch(URL).then(result => result.json()).then(cityinfo => {
-        cityinfo.cod === "404" ? console.log("Ciudad no encontrada") : showClimate(cityinfo);
+        cityinfo.cod === "404" ? alert("Ciudad no encontrada") : showClimate(cityinfo);
     });
 }
 
@@ -57,7 +57,7 @@ const cleanBtn = () => {
     form.reset();
     if (mapS) mapS.setAttribute("hidden", true);
     resultTable.setAttribute("hidden", true);
-    
+
 }
 
 //Falta terminar este-----------------------
