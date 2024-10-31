@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate-Project</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">Prueba técnica clima ciudades <span> Germán Guerrero </span></h1>
+    </header>
+    <main class="main">
+        <form action="#" id="climateForm" method="post">
+            <fieldset>
+                <legend>Clima de las ciudades</legend>
+                <div>
+                    <label for="city">Ciudad</label>
+                    <input name="city" placeholder="Ej:Bogotá" id="city" type="text">
+                </div>
+
+                <div>
+                    <label for="country">País</label>
+                    <select id="country" name="country">
+                        <option disabled selected value="">-Paises-</option>
+                        <option value="AO" value="">Angola</option>
+                        <option value="BO" value="">Bolivia</option>
+                        <option value="CO" value="">Colombia</option>
+
+
+                    </select>
+                </div>
+
+                <input class="submit" type="submit" value="Solicitar clima">
+                <input class="cleanForm" type="button" value="Limpiar formulario">
+            </fieldset>
+        </form>
+
+        <section class="climateResult">
+            <h2 hidden class="climateResult__heading">Resultados del clima</h2>
+
+            <table hidden class="tableResult">
+                <thead>
+                    <tr>
+                        <th>Temperatura actual</th>
+                        <th>Temperatura máxima</th>
+                        <th>Temperatura mínima</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tableResult__currentTemperature"></td>
+                        <td class="tableResult__maxTemperature"></td>
+                        <td class="tableResult__minTemperature"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+
+
+
+        <section class="mapSection">
+
+
+            <div id="map">
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+:root {
+
+
+    /*Basics*/
+    --white: #FFF;
+    --black: #111111;
+
+    /*Primary*/
+    --Pink: hsl(219, 64%, 50%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+
+
+    /*Neutral*/
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+
+
+    /*Typo*/
+
+    --typo: "Merriweather", serif;
+    /*300 400 700*/
+
+
+    /*Utilities*/
+    --top: 2.5rem;
+
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem -10px    */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--typo);
+    font-size: 1.6rem;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+
+}
+
+
+.header__heading span {
+    font-style: italic;
+    margin-left: 2.5rem;
+}
+
+
+#climateForm {
+    display: grid;
+    justify-content: center;
+    margin-top: 5rem;
+
+}
+
+#climateForm fieldset {
+    padding: 2.5rem;
+
+}
+
+
+
+
+#climateForm select {
+    margin-left: 4rem;
+}
+
+
+
+
+
+
+
+.submit,
+.cleanForm {
+    padding: 1rem;
+    border: none;
+    font-family: var(--typo);
+    margin-top: 2.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.submit:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.cleanForm:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.tableResult {
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+
+.tableResult th {
+    padding: 1rem;
+
+}
+
+.tableResult td {
+    text-align: center;
+}
+
+.mapSection {
+
+    width: 50%;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#map {
+    height: 70rem;
+    width: 100rem;
+}
