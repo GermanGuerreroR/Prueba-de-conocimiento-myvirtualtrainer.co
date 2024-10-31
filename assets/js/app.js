@@ -60,10 +60,6 @@ const cleanBtn = () => {
 
 }
 
-//Falta terminar este-----------------------
-const errorMsg = () => {
-
-}
 
 const generateMap = (lat, lon) => {
 
